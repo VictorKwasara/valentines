@@ -1,11 +1,19 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import Hero from "../components/hero.tsx"
+import Hero from "../components/hero"
+import Layout from "../components/Layout"
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main>
+    <Layout>
       <Hero/>
-    </main>
+      // <div id="pink">
+      //   pink
+      // </div>
+      // <div id="white">
+      //   white
+      // </div>
+    </Layout>
   )
 }
 

@@ -1,0 +1,90 @@
+:root {
+  --pinks1 : hsl(340,64%,100%);
+  --pinks2 : hsl(340,68%,95%);
+  --pinks3 : hsl(340,72%,90%);
+  --pinks4 : hsl(340,76%,85%);
+  --pinks5 : hsl(340,80%,80%);
+  --pinks6 : hsl(340,84%,75%);
+  --pinks7 : hsl(340,88%,70%);
+  --pinks8 : hsl(340,92%,65%);
+  --pinks9 : hsl(340,96%,60%);
+  --pinks10 : hsl(340,100%,55%);
+
+  --reds1 : #8c1e2d;
+  --reds1 : #8a1b2a;
+  --reds1 : #881727;
+  --reds1 : #841020;
+  --reds1 : #820d1d;
+  --reds1 : #810b1b;
+  --reds1 : #800919;
+  --reds1 : #7e0516;
+  --reds1 : #7b0112;
+
+  --background-black : radial-gradient(circle, #010101, #010101, #010100, #000000, #000000, #000000, #010001, #010001, #020002, #030102, #050102, #060102); 
+  --background-image : radial-gradient(circle, #010101, #010101, #010100, #000000, #000000, #000000, #010001, #010001, #020002, #030102, #050102, #060102), url(../../images/heroImage.jpg);
+  --background-image2: radial-gradient(circle, #010101, #020103, #030104, #050105, #080105, #090105, #0b0104, #0c0104, #0c0104, #0c0104, #0c0104, #0c0104), url(../../images/heroImage.jpg); 
+  --background-image3: radial-gradient(circle, #010101, #030105, #060108, #0a0109, #0f010a, #100109, #120008, #130007, #110006, #100005, #0e0105, #0c0104), url(../../images/heroImage.jpg);
+  margin:0 ;
+  padding:0 ;
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0 ;
+  overflow-x:hidden ;
+  background-image: var(--background-black);
+}
+
+#message {
+  position:fixed ;
+  top:0px ;
+  left:0px ;
+  margin-left: 10vw ;
+  /* padding: 50px 0 ; */
+  width: 40vw;
+  height:100vh ;
+  background-color: red;
+}
+#hero 
+{
+  position: fixed ;
+  top: 0px ;
+  right: 0px ;
+  /* overflow:hidden ; */
+  margin:0 ;
+  padding:0 ;
+  margin-right: 10vw ;
+  width: 40vw;
+  height:100vh ;
+  /* background-color: red ; */
+  background-image: var(--background-image3);
+  background-blend-mode: soft-light; 
+  backgroud-size: contain ;
+} 
+/* #white { */
+/*   width: 200px; */
+/*   height: 200px; */
+/*   background-color: white */
+/* } */
+/**/
+/* #pink{ */
+/*   width: 200px; */
+/*   height: 200px; */
+/*   background-color: var(--pinks1) */
+/* } */
+
+@keyframes backgd {
+  0% {
+  background-image: var(--background)
+  }
+  33% {
+  background-image: var(--background2)
+  }
+  66% {
+  background-image: var(--background3)
+  }
+  100% {
+  background-image: var(--background4)
+  }
+}
