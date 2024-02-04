@@ -1,50 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 :root {
-  --pinks1 : hsl(340,64%,100%);
-  --pinks2 : hsl(340,68%,95%);
-  --pinks3 : hsl(340,72%,90%);
-  --pinks4 : hsl(340,76%,85%);
-  --pinks5 : hsl(340,80%,80%);
-  --pinks6 : hsl(340,84%,75%);
-  --pinks7 : hsl(340,88%,70%);
-  --pinks8 : hsl(340,92%,65%);
-  --pinks9 : hsl(340,96%,60%);
-  --pinks10 : hsl(340,100%,55%);
+--pinks1 : hsl(340,64%,100%);
+--pinks2 : hsl(340,68%,95%);
+--pinks3 : hsl(340,72%,90%);
+--pinks4 : hsl(340,76%,85%);
+--pinks5 : hsl(340,80%,80%);
+--pinks6 : hsl(340,84%,75%);
+--pinks7 : hsl(340,88%,70%);
+--pinks8 : hsl(340,92%,65%);
+--pinks9 : hsl(340,96%,60%);
+--pinks10 : hsl(340,100%,55%);
 
-  --reds1 : #8c1e2d;
-  --reds1 : #8a1b2a;
-  --reds1 : #881727;
-  --reds1 : #841020;
-  --reds1 : #820d1d;
-  --reds1 : #810b1b;
-  --reds1 : #800919;
-  --reds1 : #7e0516;
-  --reds1 : #7b0112;
+--reds1 : #8c1e2d;
+--reds2 : #8a1b2a;
+--reds3 : #881727;
+--reds4 : #841020;
+--reds5 : #820d1d;
+--reds6 : #810b1b;
+--reds7 : #800919;
+--reds8 : #7e0516;
+--reds9 : #7b0112;
 
-  --background-black : radial-gradient(circle, #010101, #010101, #010100, #000000, #000000, #000000, #010001, #010001, #020002, #030102, #050102, #060102); 
-  --background-image : radial-gradient(circle, #010101, #010101, #010100, #000000, #000000, #000000, #010001, #010001, #020002, #030102, #050102, #060102), url(../../images/heroImage.jpg);
-  --background-image2: radial-gradient(circle, #010101, #020103, #030104, #050105, #080105, #090105, #0b0104, #0c0104, #0c0104, #0c0104, #0c0104, #0c0104), url(../../images/heroImage.jpg); 
-  --background-image3: radial-gradient(circle, #010101, #030105, #060108, #0a0109, #0f010a, #100109, #120008, #130007, #110006, #100005, #0e0105, #0c0104), url(../../images/heroImage.jpg);
-  margin:0 ;
-  padding:0 ;
-  box-sizing: border-box; 
+--rose-pink1 :hsl(358,08%,100%); 
+--rose-pink2 :hsl(358,12%,95%);
+--rose-pink3 :hsl(358,16%,90%);
+--rose-pink4 :hsl(358,20%,85%); 
+--rose-pink5 :hsl(358,24%,80%);
+--rose-pink6 :hsl(358,28%,75%);
+--rose-pink7 :hsl(358,32%,70%);
+--rose-pink8 :hsl(358,36%,65%);
+
+--background-black : radial-gradient(circle, #010101, #010101, #010100, #000000, #000000, #000000, #010001, #010001, #020002, #030102, #050102, #060102); 
+--background-image : radial-gradient(circle, #010101, #010101, #010100, #000000, #000000, #000000, #010001, #010001, #020002, #030102, #050102, #060102), url(../../images/heroImage.jpg);
+--background-image2: radial-gradient(circle, #010101, #020103, #030104, #050105, #080105, #090105, #0b0104, #0c0104, #0c0104, #0c0104, #0c0104, #0c0104), url(../../images/heroImage.jpg); 
+--background-image3: radial-gradient(circle, #010101, #030105, #060108, #0a0109, #0f010a, #100109, #120008, #130007, #110006, #100005, #0e0105, #0c0104), url(../../images/heroImage.jpg);
+margin:0 ;
+padding:0 ;
+box-sizing: border-box;
+font-size: 10px ;
 }
 
+
 body {
-  margin: 0;
-  padding: 0 ;
-  overflow-x:hidden ;
-  background-image: var(--background-black);
+margin: 0;
+padding: 0 ;
+overflow-x:hidden ;
+background-image: var(--background-black);
 }
 
 #message {
-  position:fixed ;
-  top:0px ;
-  left:0px ;
-  margin-left: 10vw ;
-  /* padding: 50px 0 ; */
-  width: 40vw;
-  height:100vh ;
-  background-color: red;
+position:fixed ;
+top:0px ;
+left:0px ;
+margin-left: 10vw ;
+/* padding: 50px 0 ; */
+width: 50rem;
+height:100vh ;
+background-color: var(--pinks3);
+background-color: var(--rose-pink2);
+font-family: 'Gloria Hallelujah', cursive;
+display: flex ;
+align-items: center ;
+justify-content: center ;
+}
+
+#header1 {
+  color: var(--pinks8);     
+  font-size: 3.5rem;
+}
+#header2 {
+  color: var(--pinks7);     
+  font-size: 3.0rem;
+}
+#header3 {
+  color: var(--pinks6);     
+  font-size: 2.5rem;
+}
+#header4 {
+  color: var(--pinks5);     
+  font-size: 2.0rem;
+  margin-bottom: 1rem ;
+}
+.headings {
+  color: var(--pinks8);
+  padding: 0px ;
+  margin: -2.0rem 0 ;
+}
+#typography{
+  margin: 0;
+  padding: 0;
+}
+
+#typography p {
+  margin: 0 ;
+  padding: 0;
+  color: var(--reds6)
+}
+.text {
+  margin: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 #hero 
 {
@@ -75,16 +131,16 @@ body {
 /* } */
 
 @keyframes backgd {
-  0% {
+0% {
   background-image: var(--background)
-  }
-  33% {
+}
+33% {
   background-image: var(--background2)
-  }
-  66% {
+}
+66% {
   background-image: var(--background3)
-  }
-  100% {
+}
+100% {
   background-image: var(--background4)
-  }
+}
 }
