@@ -57,8 +57,8 @@ margin-left: 10vw ;
 /* padding: 50px 0 ; */
 width: 50rem;
 height:100vh ;
-background-color: var(--pinks3);
-background-color: var(--rose-pink2);
+/* background-color: var(--pinks3); */
+/* background-color: var(--rose-pink2); */
 font-family: 'Gloria Hallelujah', cursive;
 display: flex ;
 align-items: center ;
@@ -66,19 +66,19 @@ justify-content: center ;
 }
 
 #header1 {
-  color: var(--pinks8);     
+  color: var(--pinks9);     
   font-size: 3.5rem;
 }
 #header2 {
-  color: var(--pinks7);     
+  color: var(--pinks8);     
   font-size: 3.0rem;
 }
 #header3 {
-  color: var(--pinks6);     
+  color: var(--pinks7);     
   font-size: 2.5rem;
 }
 #header4 {
-  color: var(--pinks5);     
+  color: var(--pinks6);     
   font-size: 2.0rem;
   margin-bottom: 1rem ;
 }
@@ -90,7 +90,7 @@ justify-content: center ;
 #typography{
   margin: 0;
   padding: 0;
-}
+} 
 
 #typography p {
   margin: 0 ;
@@ -102,6 +102,13 @@ justify-content: center ;
   font-size: 1.6rem;
   font-weight: bold;
 }
+#hearts-svg{
+  position: fixed ;
+  top:35rem;
+  left: 20vw;
+  z-index : 105 ;
+  /* background-color: white ; */
+}
 #hero 
 {
   position: fixed ;
@@ -111,13 +118,46 @@ justify-content: center ;
   margin:0 ;
   padding:0 ;
   margin-right: 10vw ;
-  width: 40vw;
+  width: 50rem;
   height:100vh ;
   /* background-color: red ; */
   background-image: var(--background-image3);
   background-blend-mode: soft-light; 
   backgroud-size: contain ;
 } 
+.sm2 {
+  fill: var(--reds8);
+ animation: sm2h 5s infinite alternate;
+}
+.sm3 {
+  fill: var(--rose-pink6); 
+ animation: sm3h 5s infinite alternate;
+}
+.sm {
+  fill: var(--rose-pink);
+ animation: smh 5s infinite alternate;
+}
+
+.md2 {
+  fill: var(--pinks10);
+ animation: md2h 5s infinite alternate;
+}
+.md3 {
+  fill: var(--pinks2);
+ animation: md3h 5s infinite alternate;
+}
+.md {
+  fill: var(--pinks4);
+ animation: mdh 5s infinite alternate;
+}
+.lg {
+ fill: var(--pinks8)  ; 
+ animation: lgh 5s infinite alternate;
+}
+.lg2  {
+ fill: var(--reds7); 
+ animation: lg2h 5s infinite alternate;
+}
 /* #white { */
 /*   width: 200px; */
 /*   height: 200px; */
@@ -130,17 +170,61 @@ justify-content: center ;
 /*   background-color: var(--pinks1) */
 /* } */
 
-@keyframes backgd {
-0% {
-  background-image: var(--background)
+@keyframes lg2h {
+100% {
+ fill: var(--pinks8); 
 }
-33% {
-  background-image: var(--background2)
 }
-66% {
-  background-image: var(--background3)
+@keyframes lgh {
+100% {
+ fill: var(--reds9); 
+}
+}
+@keyframes smh {
+40% {
+ fill: var(--reds8) 
 }
 100% {
-  background-image: var(--background4)
+ fill: var(--rose-pink6); 
+}
+}
+@keyframes sm2h {
+40% {
+ fill: var(--rose-pink)
+}
+100% {
+ fill: var(--rose-pink7); 
+}
+}
+@keyframes mdh {
+40% {
+  fill: var(--pinks2)
+}
+100% {
+ fill: var(--pinks10); 
+}
+}
+@keyframes md2h {
+40% {
+  fill: var(--pinks2)
+}
+100% {
+ fill: var(--pinks4); 
+}
+}
+@keyframes md3h {
+40% {
+  fill: var(--pinks10)
+}
+100% {
+ fill: var(--pinks4); 
+}
+}
+@keyframes sm3h {
+40% {
+  fill:var(--rose-pink6)
+}
+100% {
+ fill: var(--reds8); 
 }
 }
